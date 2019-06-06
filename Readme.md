@@ -1,0 +1,1 @@
+Inside the file function.js you'll find solutions to the intermediate data-structures and algorithm challenges from Free code camps curriculum.  
