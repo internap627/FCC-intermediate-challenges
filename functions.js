@@ -10,3 +10,5 @@ function sumAll(arr) {
   
     return num
   }
+
+  sumAll([10, 5])
