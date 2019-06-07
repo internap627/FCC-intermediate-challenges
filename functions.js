@@ -11,4 +11,16 @@ function sumAll(arr) {
     return num
   }
 
-  sumAll([10, 5])
+
+  //Return the maximum value from each nested array
+  // E.g. nums = [[4,6,7], [5,8,9], [4,2,5]] should return [ 7, 9, 5 ]
+  function findMax(arr) {
+    return arr.map(array => Math.max(...array))
+  }
+
+  //Capitalise every word in the string
+  // e.g. hello world => Hello World
+  const makeCaps = (str) => {
+    const arr = str.split(' ')
+    return arr.map(str => str.charAt(0).toUpperCase() + str.substring(1) ).join(' ')
+  }
