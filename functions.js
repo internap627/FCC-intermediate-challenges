@@ -29,3 +29,13 @@ function sumAll(arr) {
   const endsWith = (str, char) => {
     return str.charAt(str.length -1) == char ? true : false
   }
+
+
+//Remove specific elements from an array
+//The function below should return [12,92,65]
+  const destroyer = (...args) => {
+    const target = args[0]
+    const vals = args.slice(1)
+    return target.filter(el => !vals.includes(el))
+  }
+  destroyer(["possum", "trollo", 12, "safari", "hotdog", 92, 65, "grandma", "bugati", "trojan", "yacht"], "yacht", "possum", "trollo", "safari", "hotdog", "grandma", "bugati", "trojan")
