@@ -24,3 +24,8 @@ function sumAll(arr) {
     const arr = str.split(' ')
     return arr.map(str => str.charAt(0).toUpperCase() + str.substring(1) ).join(' ')
   }
+
+  //Return true of false based on the last character in a string
+  const endsWith = (str, char) => {
+    return str.charAt(str.length -1) == char ? true : false
+  }
