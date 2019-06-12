@@ -39,3 +39,21 @@ function sumAll(arr) {
     return target.filter(el => !vals.includes(el))
   }
   destroyer(["possum", "trollo", 12, "safari", "hotdog", 92, 65, "grandma", "bugati", "trojan", "yacht"], "yacht", "possum", "trollo", "safari", "hotdog", "grandma", "bugati", "trojan")
+
+
+  /*Chunky Monkey
+    Create a new 2d array of a particular size
+    The size of the nested arrays should be that of the number passed in
+  */
+ const array = ['a', 'b', 'c', 'd']
+
+  const chunkIt = (arr, num) => {
+  let newArr = []
+  while(arr.length > 0) {
+    newArr.push(arr.splice(0, num))
+  }
+  
+  return newArr
+  }
+
+  chunkIt(array, 3)
