@@ -67,3 +67,12 @@ function sumAll(arr) {
   }
   
   destroyer(["possum", "trollo", 12, "safari", "hotdog", 92, 65, "grandma", "bugati", "trojan", "yacht"], "yacht", "possum", "trollo", "safari", "hotdog", "grandma", "bugati", "trojan")
+
+  //Is it part of the string?
+  const str = "She came and went"
+  const token = "came and"
+  const existsToken = (s, t) => {
+  const re = new RegExp(t)
+  return re.test(s)
+  }
+  existsToken(str, token)
