@@ -57,3 +57,13 @@ function sumAll(arr) {
   }
 
   chunkIt(array, 3)
+
+  //Seek and destroy
+  //Remove elements from an array
+  const destroyer = (...args) => {
+    const target = args[0]
+    const vals = args.slice(1)
+    return target.filter(el => !vals.includes(el))
+  }
+  
+  destroyer(["possum", "trollo", 12, "safari", "hotdog", 92, 65, "grandma", "bugati", "trojan", "yacht"], "yacht", "possum", "trollo", "safari", "hotdog", "grandma", "bugati", "trojan")
