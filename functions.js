@@ -76,3 +76,26 @@ function sumAll(arr) {
   return re.test(s)
   }
   existsToken(str, token)
+
+
+
+    //Get the total number of championships won by the player
+    function getGrandSlamCount(obj) {
+	let count = 0;
+	for(let key in obj) {
+		if(key === 'report') {
+			count = Object.values(obj[key]).reduce((a, b) => a + b);
+		}
+	}
+	return count;
+    }
+
+    getGrandSlamCount({
+	firstName: 'Roger',
+	report: {
+		australianOpen: 6,
+		frenchOpen: 1,
+		wimbledon: 8,
+		USOpen: 5
+	}
+    })
